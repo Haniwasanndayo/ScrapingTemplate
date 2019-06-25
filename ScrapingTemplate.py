@@ -5,16 +5,16 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 
 
-# PhantomJS‚Ìƒhƒ‰ƒCƒo[‚ğ“¾‚é
+# PhantomJSã®ãƒ‰ãƒ©ã‚¤ãƒãƒ¼ã‚’å¾—ã‚‹
 
 browser = webdriver.PhantomJS()
 browser.implicitly_wait(2)
 
 
-# LoginƒAƒNƒZƒX•ƒX[ƒv
+# Loginã‚¢ã‚¯ã‚»ã‚¹ï¼†ã‚¹ãƒ¼ãƒ—
 
 url_login="hogehoge.com"
 
 browser.get(url_login)
 
-soup=bs4.BeautifulSoup(urllib.request.urlopen(url_login).read(), "html.parser")
+soup=bs4.BeautifulSoup(urllib.request.urlopen(url_login.read(), "html.parser")
